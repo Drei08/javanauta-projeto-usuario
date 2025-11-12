@@ -2,7 +2,7 @@ package com.javanauta.aprendendospring.business;
 
 import com.javanauta.aprendendospring.infrastructure.entity.Usuario;
 import com.javanauta.aprendendospring.infrastructure.exceptions.ConflictException;
-import com.javanauta.aprendendospring.infrastructure.repository.UsuarioReposiroty;
+import com.javanauta.aprendendospring.infrastructure.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UsuarioService {
 
-    private final UsuarioReposiroty usuarioReposiroty;
+    private final UsuarioRepository usuarioReposiroty;
 
     public Usuario salvaUsuario(Usuario usuario){
         try{
